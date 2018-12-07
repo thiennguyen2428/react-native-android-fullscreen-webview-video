@@ -63,7 +63,7 @@ public class VideoWebChromeClient extends WebChromeClient {
     mCustomViewCallback = callback;
 
     view.setBackgroundColor(Color.BLACK);
-    mActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+    mActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
     getRootView().addView(mVideoView, FULLSCREEN_LAYOUT_PARAMS);
 
     // ((View) mWebView.getRootView()).setVisibility(View.GONE);
